@@ -120,15 +120,22 @@
     @apply text-secondary text-[27px];
   }
 
-
   /* ------------------------------------FOR MENU----------------------------------- */
 
-  .toppings__list{
+  .toppingsFood {
+    @apply w-[30rem];
+  }
+
+  .sidesFood{
+    @apply w-[30rem];
+  }
+
+  /* .toppings__list{
     @apply flex;
   }
   .toppings__names li{
     @apply w-[30rem];
-  }
+  } */
 
   /* REPEATABLE PATTERNS */
 

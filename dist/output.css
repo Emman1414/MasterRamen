@@ -804,9 +804,20 @@ p{
 
 /* ------------------------------------FOR MENU----------------------------------- */
 
-.toppings__names li{
+.toppingsFood{
   width: 30rem;
 }
+
+.sidesFood{
+  width: 30rem;
+}
+
+/* .toppings__list{
+    @apply flex;
+  }
+  .toppings__names li{
+    @apply w-[30rem];
+  } */
 
 /* REPEATABLE PATTERNS */
 
@@ -927,12 +938,20 @@ p{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.grid-cols-\[_0\.5fr_0\.5fr\]{
+  grid-template-columns: 0.5fr 0.5fr;
+}
+
 .grid-cols-\[_1fr_1fr\]{
   grid-template-columns: 1fr 1fr;
 }
 
 .grid-cols-\[_2fr_2fr\]{
   grid-template-columns: 2fr 2fr;
+}
+
+.grid-cols-\[_1fr_0\.5fr\]{
+  grid-template-columns: 1fr 0.5fr;
 }
 
 .flex-col{
@@ -1061,6 +1080,11 @@ p{
   font-family: Montserrat;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -1089,6 +1113,11 @@ p{
   font-size: 8rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1100,6 +1129,10 @@ p{
 
 .font-semibold{
   font-weight: 600;
+}
+
+.uppercase{
+  text-transform: uppercase;
 }
 
 .leading-\[8rem\]{
