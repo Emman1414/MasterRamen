@@ -6,9 +6,9 @@
 @tailwind utilities;
 
 @layer base {
-  * {
+  /* * {
     @apply border border-[red];
-  }
+  } */
   body {
     @apply font-montserrat font-economica font-comingSoon overflow-x-hidden;
   }
@@ -52,9 +52,6 @@
   .top__wrapper {
     @apply flex flex-row justify-center items-center;
   }
-  .top__wrapper h2 {
-    @apply text-[25px] text-white font-semibold;
-  }
 
   .step {
     @apply text-center flex justify-center items-center;
@@ -75,10 +72,10 @@
   /* RAMEN MENU */
 
   .food {
-    @apply flex place-items-start;
+    @apply flex flex-col-reverse lg:flex-row lg:place-items-start place-items-center border border-gray-500 p-5 mb-5 lg:mb-0;
   }
   .food--details {
-    @apply w-[20rem];
+    @apply w-[20rem] text-center lg:text-start;
   }
   .food h2 {
     @apply font-economica text-[60px] font-bold text-dark;
@@ -95,6 +92,9 @@
   .img img {
     @apply w-full h-[15rem];
   }
+  .name {
+    @apply flex lg:flex-col justify-between items-center lg:items-start;
+  }
 
   .img {
     @apply grid place-items-center;
@@ -105,11 +105,8 @@
   .cta__wrapper {
     @apply flex flex-col text-center;
   }
-  .cta .gradient {
-    @apply z-0 content-none absolute translate-y-[8.2rem] w-full h-[3rem] bg-gradient-to-t from-slate-200;
-  }
   .ctaImg img {
-    @apply w-[50rem] h-full;
+    @apply w-full h-full;
   }
 
   /* FOOTER */
@@ -123,11 +120,40 @@
   /* ------------------------------------FOR MENU----------------------------------- */
 
   .toppingsFood {
-    @apply w-[30rem];
+    @apply w-[30rem] mb-5 lg:mb-0;
   }
 
-  .sidesFood{
-    @apply w-[30rem];
+  .sidesFood {
+    @apply w-[30rem] mb-5 lg:mb-0;
+  }
+
+  .foodSelect p {
+    @apply text-[25px] lg:text-[45px] font-bold font-economica text-dark cursor-pointer;
+  }
+
+  .bottleFoods {
+    @apply mb-5;
+  }
+  .draftFoods {
+    @apply mb-5;
+  }
+  .drink--details {
+    @apply mr-5;
+  }
+
+  /* --------------------------------FOR TABS-------------------------------------- */
+
+  .foodSelect p {
+    @apply cursor-pointer;
+  }
+  .foodSelect p.active {
+    @apply border-b-4 border-secondary pb-1;
+  }
+  .foodTabs.active {
+    @apply gap-10 lg:gap-0 grid lg:grid-cols-2;
+  }
+  .foodTabs {
+    @apply hidden lg:hidden;
   }
 
   /* .toppings__list{
